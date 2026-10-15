@@ -43,7 +43,7 @@ jobs:
       # Si une faille CRITICAL est trouvée, le paramètre exit-code: '1' fait planter la CI ici. 
       # L'image ne sera donc jamais publiée (Challenge réussi).
       - name: Run Trivy vulnerability scanner
-        uses: aquasec/trivy-action@master
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'novacorp-api:test'
           format: 'table'
